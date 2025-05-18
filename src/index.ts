@@ -10,11 +10,7 @@ const server = new McpServer({
     name: 'sarcasm',
     version: '1.0.0',
     capabilities: {
-        tools: {
-            'get-all-sarcastic-quotes': {
-                description: 'Get all available sarcastic quotes'
-            }
-        }
+        tools: {}
     }
 });
 
