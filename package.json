@@ -1,9 +1,19 @@
 {
 	"name": "sarcasm-mcp",
+	"description": "A sarcasm detection model for the Model Context Protocol (MCP).",
+	"author": "harshitrv",
+	"version": "1.0.0",
 	"type": "module",
 	"bin": {
 		"sarcasm": "./build/index.js"
 	},
+	"repository": {
+		"url": "https://github.com/HarshitRV/sarcasm-mcp"
+	},
+	"keywords": [
+		"mcp",
+		"sarcasm"
+	],
 	"scripts": {
 		"build": "tsc && chmod 755 build/index.js"
 	},
@@ -18,5 +28,6 @@
 	"devDependencies": {
 		"@types/node": "^22.15.18",
 		"typescript": "^5.8.3"
-	}
+	},
+	"license": "MIT"
 }

@@ -79,10 +79,10 @@ Responses are returned in the following format:
 
 ```typescript
 interface SarcasticQuote {
-	id: string;
-	sarcasm: string;
-	createdAt: string;
-	updatedAt: string;
+    id: string;
+    sarcasm: string;
+    createdAt: string;
+    updatedAt: string;
 }
 ```
 
