@@ -1,5 +1,6 @@
 {
-	"name": "sarcasm-mcp",
+	"name": "sarcastic-quote-mcp",
+	"main": "build/index.js",
 	"description": "A sarcasm detection model for the Model Context Protocol (MCP).",
 	"author": "harshitrv",
 	"version": "1.0.0",
