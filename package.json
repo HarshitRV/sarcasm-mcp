@@ -3,7 +3,7 @@
 	"main": "build/index.js",
 	"description": "A sarcasm detection model for the Model Context Protocol (MCP).",
 	"author": "harshitrv",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"bin": {
 		"sarcasm": "./build/index.js"
