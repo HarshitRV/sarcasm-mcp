@@ -23,7 +23,7 @@
     "servers": {
         "sarcasm-mcp": {
             "command": "npx",
-            "args": ["sarcastic-quote-mcp"], 
+            "args": ["mcp-sarcasm"], // Package name
             "env": {},
             "type": "stdio"
         }
