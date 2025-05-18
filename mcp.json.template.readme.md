@@ -15,3 +15,17 @@
         }
     }
 ```
+
+## Via NPX
+
+```json
+{
+    "servers": {
+        "sarcasm-mcp": {
+            "command": "npx",
+            "args": ["sarcastic-quote-mcp"], 
+            "env": {},
+            "type": "stdio"
+        }
+    }
+}
