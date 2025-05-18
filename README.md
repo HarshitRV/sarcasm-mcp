@@ -29,16 +29,66 @@ npm install
 npm run build
 ```
 
-## 🛠️ Usage
-
-### Running as an MCP Server
+## 🧰 Development
 
 ```bash
-# Using npx after installation
-npx sarcasm
+# Install dependencies
+npm install
 
-# Or directly from the build
-node build/index.js
+# Build the project
+npm run build
+```
+
+### Run the mcp in vs code
+
+- Create mcp.json in your workspace if not already present
+
+```sh
+mkdir .vscode
+touch .vscode/mcp.json
+```
+
+- Add the following configuration to the mcp.json file
+
+```json
+{
+    "servers": {
+        "sarcasm": {
+            "type": "stdio",
+            "command": "node",
+            "args": [
+                "PATH_TO_YOUR_BUILD_DIRECTORY/index.js"
+            ]
+        }
+    }
+}
+```
+
+## 🛠️ Usage
+
+### Running MCP Server via NPX
+
+- Create mcp.json in your workspace if not already present
+
+```sh
+mkdir .vscode
+touch .vscode/mcp.json
+```
+
+- Add the following configuration to the mcp.json file
+
+```json
+{
+    "servers": {
+        "sarcasm": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "mcp-sarcasm"
+            ]
+        }
+    }
+}
 ```
 
 ### Using with GitHub Copilot
@@ -86,19 +136,6 @@ interface SarcasticQuote {
 }
 ```
 
-## 🧰 Development
-
-```bash
-# Install dependencies
-npm install
-
-# Build the project
-npm run build
-
-# Start the server in development mode
-node build/index.js
-```
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -111,4 +148,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
