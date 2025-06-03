@@ -16,7 +16,8 @@
 		"sarcasm"
 	],
 	"scripts": {
-		"build": "tsc && chmod 755 build/index.js"
+		"build": "tsc",
+		"dev": "node ./build/index.js"
 	},
 	"files": [
 		"build"
@@ -24,9 +25,11 @@
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.11.4",
 		"axios": "^1.9.0",
+		"express": "^5.1.0",
 		"zod": "^3.24.4"
 	},
 	"devDependencies": {
+		"@types/express": "^5.0.2",
 		"@types/node": "^22.15.18",
 		"typescript": "^5.8.3"
 	},
